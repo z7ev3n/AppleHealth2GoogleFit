@@ -42,7 +42,7 @@ def createStepDataSource():
 			"name": "com.google.step_count.delta"
 		  },
 		  "device": {
-			"manufacturer": "HERMAN",
+			"manufacturer": "Apple",
 			"model": "RESTAPI",
 			"type": "tablet",
 			"uid": str(randint(0, 1000)),
@@ -84,7 +84,7 @@ def createWeightDataSource():
 			"name": "com.google.weight"
 		  },
 		  "device": {
-			"manufacturer": "HERMAN",
+			"manufacturer": "Apple",
 			"model": "RESTAPI",
 			"type": "tablet",
 			"uid": str(randint(0, 1000)),
@@ -126,7 +126,7 @@ def createDistanceDataSource():
 			"name": "com.google.distance.delta"
 		  },
 		  "device": {
-			"manufacturer": "HERMAN",
+			"manufacturer": "Apple",
 			"model": "RESTAPI",
 			"type": "tablet",
 			"uid": str(randint(0, 1000)),
@@ -167,7 +167,7 @@ def createHeartRateDataSource():
 			"name": "com.google.heart_rate.bpm"
 		  },
 		  "device": {
-			"manufacturer": "HERMAN",
+			"manufacturer": "Apple",
 			"model": "RESTAPI",
 			"type": "tablet",
 			"uid": str(randint(0, 1000)),
