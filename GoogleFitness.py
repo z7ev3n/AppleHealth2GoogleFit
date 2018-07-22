@@ -110,7 +110,7 @@ def createDistanceDataSource():
 	headers = { 'content-type': 'application/json',
 				'Authorization': 'Bearer %s' % config.accessToken }
 	data = {
-		  "dataStreamName": "AppleWeightDataSource",
+		  "dataStreamName": "AppleDistanceDataSource",
 		  "type": "derived",
 		   "application": {
 				"name": "AppleHeatlth2GoogleFit",
