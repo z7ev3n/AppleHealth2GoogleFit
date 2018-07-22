@@ -5,6 +5,7 @@ import sys
 weightRecords = []
 stepRecords = []
 distanceRecords = []
+heartRateRecords = []
 
 records = AppleHealthXmlParser.parse(sys.argv[1]);
 
@@ -15,10 +16,13 @@ for record in records:
 		stepRecords.append(record)
 	if record.recordType == "HKQuantityTypeIdentifierDistanceWalkingRunning":
 		distanceRecords.append(record)
+	if record.recordType == "HKQuantityTypeIdentifierHeartRate":
+		heartRateRecords.append(record)
 
 weightDataSource = GoogleFitness.createWeightDataSource()
 stepDataSource = GoogleFitness.createStepDataSource()
 distanceDataSource = GoogleFitness.createDistanceDataSource()
+heartRateDataSource = GoogleFitness.createHeartRateDataSource()
 
 if weightDataSource and len(weightRecords) > 0 :
 	GoogleFitness.sendPoints(weightDataSource, weightRecords)
@@ -35,3 +39,5 @@ if distanceDataSource and len(distanceRecords) > 0 :
 
 
 
+if heartRateDataSource and len(heartRateRecords) > 0 :
+	GoogleFitness.sendPoints(heartRateDataSource, heartRateRecords)

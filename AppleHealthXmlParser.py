@@ -2,7 +2,7 @@ import xml.sax
 from Record import Record
 
 
-supportedTypes = ["HKQuantityTypeIdentifierBodyMass", "HKQuantityTypeIdentifierStepCount","HKQuantityTypeIdentifierDistanceWalkingRunning"  ]
+supportedTypes = ["HKQuantityTypeIdentifierBodyMass", "HKQuantityTypeIdentifierStepCount","HKQuantityTypeIdentifierDistanceWalkingRunning", "HKQuantityTypeIdentifierHeartRate" ]
 
 records = []
 
